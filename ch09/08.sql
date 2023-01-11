@@ -1,3 +1,4 @@
+--요일 추가해서 생성
 CREATE OR REPLACE MODEL ch09eu.bicycle_model_weekday
 OPTIONS(input_label_cols=['duration'], model_type='linear_reg')
 AS
