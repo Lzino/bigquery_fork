@@ -1,3 +1,4 @@
+-- L2정규화
 CREATE OR REPLACE MODEL ch09eu.bicycle_model_bucketized_seq_l2
 TRANSFORM(* EXCEPT(start_date)
   , IF(EXTRACT(dayofweek FROM start_date) BETWEEN 2 AND 6, 'weekday', 'weekend') AS dayofweek
