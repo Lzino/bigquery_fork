@@ -1,3 +1,6 @@
+-- TRANSFORM 사용 
+-- 구간나누기 ?? 
+
 CREATE OR REPLACE MODEL ch09eu.bicycle_model_bucketized
 TRANSFORM(* EXCEPT(start_date)
   , IF(EXTRACT(dayofweek FROM start_date) BETWEEN 2 AND 6, 'weekday', 'weekend') as dayofweek
