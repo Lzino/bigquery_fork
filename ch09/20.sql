@@ -1,3 +1,4 @@
+-- DNN 모델 
 CREATE OR REPLACE MODEL ch09eu.bicycle_model_dnn
 TRANSFORM(* EXCEPT(start_date)
   , IF(EXTRACT(dayofweek FROM start_date) BETWEEN 2 AND 6, 'weekday', 'weekend') AS dayofweek
