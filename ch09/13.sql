@@ -1,3 +1,5 @@
+--3시 배치 예측 
+
 DECLARE tomorrow_3am TIMESTAMP;
 SET tomorrow_3am = TIMESTAMP_ADD(
   TIMESTAMP(DATE_ADD(CURRENT_DATE(), INTERVAL 1 DAY)),
