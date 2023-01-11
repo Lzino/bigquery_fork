@@ -1,3 +1,5 @@
+-- 상관계수
+
 SELECT
   CORR(bikes_count, duration) AS corr
 FROM `bigquery-public-data`.london_bicycles.cycle_hire
