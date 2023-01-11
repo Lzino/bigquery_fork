@@ -1,3 +1,5 @@
+-- Feature extraction 예시
+
 CREATE OR REPLACE MODEL ch09eu.bicycle_model_fc_geo
 TRANSFORM(duration
   , ML.FEATURE_CROSS(STRUCT(
