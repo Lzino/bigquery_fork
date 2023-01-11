@@ -1,3 +1,4 @@
+--불균형한 데이터 맞추기
 CREATE OR REPLACE MODEL ch09eu.bicycle_model_longrental_balanced
 TRANSFORM(* EXCEPT(start_date)
   , IF(EXTRACT(dayofweek FROM start_date) BETWEEN 2 AND 6, 'weekday', 'weekend') AS dayofweek
